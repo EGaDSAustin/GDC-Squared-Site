@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Navbar,Container, Row, Column, Button} from 'react-bootstrap';
+import React from 'react';
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <Navbar>
+        {/* https://react-bootstrap.github.io/components/navbar/ */}
+        
+      </Navbar>
+      <Row>
+        <h1>yo</h1>
+        <p>Hi!</p>
+        <p>bye!</p>
+      </Row>
+      <ButtonToolbar>
+        <Button variant = "primary"> Blue!</Button>
+        {/* put the button stuff here */}
+      </ButtonToolbar>
+      
+    </Container>
+    );
 }
 
 export default App;

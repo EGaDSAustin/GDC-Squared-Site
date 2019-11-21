@@ -7,7 +7,7 @@ import SignUp from './subpages/SignUp'
 import Sponsors from './subpages/Sponsors'
 function App() {
   return (
-    <Container>
+    <>
       <Navbar>
         {/* https://react-bootstrap.github.io/components/navbar/ */}
         <Nav>
@@ -38,7 +38,7 @@ function App() {
         {/*we can put the link for sponsors here */}
       </ButtonToolbar>
       
-    </Container>
+    </>
     );
 }
 

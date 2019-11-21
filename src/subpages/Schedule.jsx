@@ -3,9 +3,9 @@ import React from 'react';
 const Schedule = () => {
 
     return (
-        <dev>
+        <div>
             
-        </dev>
+        </div>
     );
 }
 

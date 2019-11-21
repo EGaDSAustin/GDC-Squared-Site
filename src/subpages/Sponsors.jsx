@@ -3,9 +3,9 @@ import React from 'react';
 const Sponsors = () => {
 
     return (
-        <dev>
+        <div>
             
-        </dev>
+        </div>
     );
 }
 

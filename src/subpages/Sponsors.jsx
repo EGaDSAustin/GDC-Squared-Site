@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Sponsors = () => {
+const Sponsors = (props) => {
 
     return (
         <div>

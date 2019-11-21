@@ -1,16 +1,30 @@
 import './App.css';
-import {Navbar,Container, Row, Column, Button, ButtonToolbar} from 'react-bootstrap';
+import {Navbar,Container, Row, Nav, Button, ButtonToolbar} from 'react-bootstrap';
 import React from 'react';
-
+import About from './subpages/About'
+import Schedule from './subpages/Schedule'
+import SignUp from './subpages/SignUp'
+import Sponsors from './subpages/Sponsors'
 function App() {
-  
-
   return (
     <Container>
       <Navbar>
         {/* https://react-bootstrap.github.io/components/navbar/ */}
-        
+        <Nav>
+          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="#schedule">Schedule</Nav.Link>
+          <Nav.Link href="#sign-up">Sign up</Nav.Link>
+          <Nav.Link href="#join">Join</Nav.Link>
+        </Nav>
+
       </Navbar>
+
+      <About />
+      <Schedule />
+      <SignUp />
+      <Sponsors />
+
+      {/* TODO: REMOVE TEMP CODE */}
       <Row>
         <h1>Welcome to GDC Squared</h1>
         <p>Here we can put more information about the event</p>

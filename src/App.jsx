@@ -19,9 +19,9 @@ function App() {
 
       </Navbar>
 
-      <About />
+      <About    />
       <Schedule />
-      <SignUp />
+      <SignUp   />
       <Sponsors />
 
       {/* TODO: REMOVE TEMP CODE */}

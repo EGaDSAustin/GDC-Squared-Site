@@ -1,5 +1,5 @@
 import './App.css';
-import {Navbar,Container, Row, Nav, Button, ButtonToolbar} from 'react-bootstrap';
+import {Navbar, Container, Row, Nav, Button, ButtonToolbar} from 'react-bootstrap';
 import React from 'react';
 import About from './subpages/About'
 import Schedule from './subpages/Schedule'
@@ -8,6 +8,7 @@ import Sponsors from './subpages/Sponsors'
 function App() {
   return (
     <>
+    
       <Navbar>
         {/* https://react-bootstrap.github.io/components/navbar/ */}
         <Nav>
@@ -38,6 +39,7 @@ function App() {
         {/*we can put the link for sponsors here */}
       </ButtonToolbar>
       
+
     </>
     );
 }

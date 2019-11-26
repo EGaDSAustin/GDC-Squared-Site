@@ -7,10 +7,11 @@ const About = (props) => {
     
     return (
         <div>
-            <h1> What is GDC^2? </h1>
+            <h1 id="subpage-header">What is GDC^2?</h1>
             <Container fluid='true'>
                 <Row>
                     <Col>
+                    <p>
                         GDC^2 is an EGaDS! hosted event focused on the
                         practices and technology used in the moder games
                         industry, similar to the well known Game Developers
@@ -18,8 +19,10 @@ const About = (props) => {
                         come and give interesting talks on technology and
                         practices in the game industry, as well as an arcade of
                         member projects. Lunch will be provided.
-
+                    </p>
+                    <p>
                         Hope to see you there!
+                    </p>
                     </Col>
                     <Col>
                         Pictures here!

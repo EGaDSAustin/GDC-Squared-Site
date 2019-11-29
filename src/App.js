@@ -1,32 +1,30 @@
 import './App.css';
-import {Navbar, Container, Row, Col, Nav, Media} from 'react-bootstrap';
+import {Container, Row, Col, Image} from 'react-bootstrap';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { browserHistory } from 'react-router';
 import React from 'react';
 import About from './subpages/About'
 import Schedule from './subpages/Schedule'
 import SignUp from './subpages/SignUp'
-import Sponsors from './subpages/Sponsors'
+import Sponsors from './subpages/Sponsors' 
+import Navigation from './subpages/Navigation'
+
+function ScrollToTop() {
+  window.scrollTo({top: 0, behavior:'smooth'});
+}
 
 function App() {
   return (
-    <>
+    
       <Container bsPrefix="app-container">
         <Row>
           <Col>
-            <Media>
-              <img alt="iso art"/>
-            </Media>
+              <Navigation/>
           </Col>
-          <Col>
-            <Navbar>
-            {/* https://react-bootstrap.github.io/components/navbar/ */}
-            <Nav>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#schedule">Schedule</Nav.Link>
-              <Nav.Link href="#sign-up">Sign up</Nav.Link>
-              <Nav.Link href="#join">Join</Nav.Link>
-            </Nav>
-            </Navbar>
-          </Col>
+        </Row>
+        <Row>
+          {/*insert image w/ GDC^2*/}
+          <Image src = "holder.js/100px250" fluid/>
         </Row>
         <Row bsPrefix="subpage1-row subpage">
           <About    />
@@ -39,7 +37,7 @@ function App() {
           <Sponsors />
         </Row>
       </Container>
-    </>
+    
     );
 }
 

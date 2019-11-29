@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 
 const About = (props) => {
     
@@ -26,7 +27,8 @@ const About = (props) => {
                     </Col>
                     <Col>
                         Pictures here!
-                        {/* we can put the pictures here*/}
+                        {/*currently this photo is broken but easily changed*/}
+                        <Image src= "holder.js/100px/250" rounded /> 
                     </Col>
                 </Row>
             </Container>

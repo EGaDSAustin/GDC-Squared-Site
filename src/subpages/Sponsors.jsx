@@ -4,38 +4,56 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Media from 'react-bootstrap/Media';
 
-const Sponsors = (props) => {
+const sponsorList = [
+    {
+        name: 'Niantic',
+        img: 'img-src',
+        altText: 'niantic'
+    },
+    {
+        name: 'Niantic',
+        img: 'img-src',
+        altText: 'niantic'
+    },
+    {
+        name: 'Niantic',
+        img: 'img-src',
+        altText: 'niantic'
+    },
+    {
+        name: 'Niantic',
+        img: 'img-src',
+        altText: 'niantic'
+    },
+    {
+        name: 'Niantic',
+        img: 'img-src',
+        altText: 'niantic'
+    },
+    {
+        name: 'Niantic',
+        img: 'img-src',
+        altText: 'niantic'
+    },
+]
 
+const Sponsor = ({sponsor}) => {
+    return (
+        <Col>
+            <Media>
+                <img src={sponsor.img} alt={sponsor.altText} />
+            </Media>
+        </Col>
+    );
+}
+
+const Sponsors = (props) => {
     return (
         <div>
             <h6>OUR SPONSORS</h6>
             <Container>
                 <Row>
-                    <Col>
-                        <Media>
-                            <img alt="sponsor img1"/>
-                        </Media>
-                    </Col>
-                    <Col>
-                        <Media>
-                            <img alt="sponsor img1"/>
-                        </Media>
-                    </Col>
-                    <Col>
-                        <Media>
-                            <img alt="sponsor img2"/>
-                        </Media>
-                    </Col>
-                    <Col>
-                        <Media>
-                            <img alt="sponsor img3"/>
-                        </Media>
-                    </Col>
-                    <Col>
-                        <Media>
-                            <img alt="sponsor img4"/>
-                        </Media>
-                    </Col>
+                    {sponsorList.map((s, idx) => <Sponsor sponsor={s} key={idx}/>)}
                 </Row>
                 <Row>
                     <Col>

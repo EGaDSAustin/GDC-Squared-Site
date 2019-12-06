@@ -24,7 +24,11 @@ function App() {
         </Row>
         <Row>
           {/*insert image w/ GDC^2*/}
-          <Image src = "holder.js/100px250" fluid/>
+          <Container>
+            <Image src = "holder.js/100px250" fluid/>
+            <h2 class="text-center">GDC^2</h2>
+            <p class = "text-center">February XXth - XXth 2020</p>
+          </Container>
         </Row>
         <Row bsPrefix="subpage1-row subpage">
           <About    />

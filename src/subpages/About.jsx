@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import Text from '../components/Text';
 
 const About = (props) => {
     
@@ -12,7 +13,7 @@ const About = (props) => {
             <Container fluid='true'>
                 <Row>
                     <Col>
-                    <p>
+                    <Text>
                         GDC^2 is an EGaDS! hosted event focused on the
                         practices and technology used in the moder games
                         industry, similar to the well known Game Developers
@@ -20,10 +21,10 @@ const About = (props) => {
                         come and give interesting talks on technology and
                         practices in the game industry, as well as an arcade of
                         member projects. Lunch will be provided.
-                    </p>
-                    <p>
+                    </Text>
+                    <Text>
                         Hope to see you there!
-                    </p>
+                    </Text>
                     </Col>
                     <Col>
                         Pictures here!

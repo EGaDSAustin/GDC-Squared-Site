@@ -8,6 +8,8 @@ import Schedule from './subpages/Schedule'
 import SignUp from './subpages/SignUp'
 import Sponsors from './subpages/Sponsors' 
 import Navigation from './subpages/Navigation'
+import Text from './components/Text';
+
 
 function ScrollToTop() {
   window.scrollTo({top: 0, behavior:'smooth'});
@@ -27,7 +29,7 @@ function App() {
           <Container>
             <Image src = "holder.js/100px250" fluid/>
             <h2 class="text-center">GDC^2</h2>
-            <p class = "text-center">February XXth - XXth 2020</p>
+            <Text class = "text-center">February XXth - XXth 2020</Text>
           </Container>
         </Row>
         <Row bsPrefix="subpage1-row subpage">

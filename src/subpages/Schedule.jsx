@@ -1,10 +1,11 @@
 import React from 'react';
+import Header from '../components/Header';
 
 const Schedule = (props) => {
 
     return (
         <div>
-            <h1 id="subpage-header">Schedule</h1>
+            <Header>Schedule</Header>
         </div>
     );
 }

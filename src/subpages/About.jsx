@@ -4,12 +4,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Text from '../components/Text';
+import Header from '../components/Header';
 
 const About = (props) => {
     
     return (
         <div>
-            <h1 id="subpage-header">What is GDC^2?</h1>
+            <Header color="">What is GDC^2?</Header>
             <Container fluid='true'>
                 <Row>
                     <Col>

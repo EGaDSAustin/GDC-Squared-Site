@@ -9,7 +9,7 @@ import SignUp from './subpages/SignUp'
 import Sponsors from './subpages/Sponsors' 
 import Navigation from './subpages/Navigation'
 import Text from './components/Text';
-import Subpage from './subpages/Subpage'
+import Header from './components/Header';
 
 function ScrollToTop() {
   window.scrollTo({top: 0, behavior:'smooth'});
@@ -28,8 +28,8 @@ function App() {
           {/*insert image w/ GDC^2*/}
           <Container>
             <Image src = "holder.js/100px250" fluid/>
-            <h2 class="text-center">GDC^2</h2>
-            <Text class = "text-center">February XXth - XXth 2020</Text>
+            <Header>GDC^2</Header>
+            <Text>February XXth - XXth 2020</Text>
           </Container>
         </Row>
         <Row bsPrefix="subpage1-row subpage">
@@ -41,9 +41,6 @@ function App() {
         </Row>
         <Row bsPrefix="subpage3-row subpage">
           <Sponsors />
-        </Row>
-        <Row>
-          <Subpage header="Test Styled Components Subpage"/>
         </Row>
       </Container>
     

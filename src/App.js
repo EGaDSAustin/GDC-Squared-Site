@@ -8,6 +8,7 @@ import Schedule from './subpages/Schedule'
 import SignUp from './subpages/SignUp'
 import Sponsors from './subpages/Sponsors' 
 import Navigation from './subpages/Navigation'
+import Subpage from './subpages/Subpage'
 
 function ScrollToTop() {
   window.scrollTo({top: 0, behavior:'smooth'});
@@ -39,6 +40,9 @@ function App() {
         </Row>
         <Row bsPrefix="subpage3-row subpage">
           <Sponsors />
+        </Row>
+        <Row>
+          <Subpage header="Test Styled Components Subpage"/>
         </Row>
       </Container>
     

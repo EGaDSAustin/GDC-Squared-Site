@@ -55,31 +55,6 @@ const Sponsors = (props) => {
                 <Row>
                     {sponsorList.map((s, idx) => <Sponsor sponsor={s} key={idx}/>)}
                 </Row>
-                <Row>
-                    <Col>
-                        <Media>
-                            <img alt="iso logo"/>
-                        </Media>
-                    </Col>
-                    <Col>
-                        Join EGaDS!
-                    </Col>
-                    <Col>
-                        <Media>
-                            <img alt="twitter"/>
-                        </Media>
-                    </Col>
-                    <Col>
-                        <Media>
-                            <img alt="instagram"/>
-                        </Media>
-                    </Col>
-                    <Col>
-                        <Media>
-                            <img alt="facebook"/>
-                        </Media>
-                    </Col>
-                </Row>
             </Container>
         </div>
     );

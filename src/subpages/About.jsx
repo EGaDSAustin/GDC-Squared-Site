@@ -10,12 +10,12 @@ const About = (props) => {
     
     return (
         <div>
-            <Header color="">What is GDC^2?</Header>
+            <Header color="">What is GDC<sup>2</sup>?</Header>
             <Container fluid='true'>
                 <Row>
                     <Col>
                     <Text>
-                        GDC^2 is an EGaDS! hosted event focused on the
+                        GDC<sup>2</sup> is an EGaDS! hosted event focused on the
                         practices and technology used in the moder games
                         industry, similar to the well known Game Developers
                         Conference. We'll have a number of industry speakers

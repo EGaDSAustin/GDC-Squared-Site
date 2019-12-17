@@ -28,7 +28,7 @@ function App() {
           {/*insert image w/ GDC^2*/}
           <Container>
             <Image src = "holder.js/100px250" fluid/>
-            <Header>GDC^2</Header>
+            <Header>GDC<sup>2</sup></Header>
             <Text>February XXth - XXth 2020</Text>
           </Container>
         </Row>

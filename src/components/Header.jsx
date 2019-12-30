@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const SubpageHeader = styled.h1`
+const Header = styled.h1`
 padding: 2% 0% 2%;
 text-align: center;
-color: #09d3ac;
+color: ${props => props.primary ? "#09d3ac" : "#ffffff"};
 `;
 
-export default SubpageHeader;
+export default Header;

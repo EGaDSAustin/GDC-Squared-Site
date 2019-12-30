@@ -50,8 +50,10 @@ const Sponsor = ({sponsor}) => {
 const Sponsors = (props) => {
     return (
         <div>
-            <h6>OUR SPONSORS</h6>
             <Container>
+                <Row>
+                    <h6>OUR SPONSORS</h6>
+                </Row>
                 <Row>
                     {sponsorList.map((s, idx) => <Sponsor sponsor={s} key={idx}/>)}
                 </Row>

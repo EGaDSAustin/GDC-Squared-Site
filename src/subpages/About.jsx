@@ -10,7 +10,7 @@ const About = (props) => {
     
     return (
         <div>
-            <Header color="">What is GDC<sup>2</sup>?</Header>
+            <Header primary>What is GDC<sup>2</sup>?</Header>
             <Container fluid='true'>
                 <Row>
                     <Col>

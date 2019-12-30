@@ -1,6 +1,6 @@
 :root{
-  --color1: #969665;
-  --color1light: #c9c99b;
+  --color1: #51c4c2;
+  --color1light: #bff1f0;
 }
 
 body {
@@ -27,7 +27,7 @@ code {
 
 .schedule table, th, td{
   text-align: center;
-  border: 1px solid lightgray;
+  border: 1px solid #bff1f0;
 }
 
 .schedule tr:nth-child(even){

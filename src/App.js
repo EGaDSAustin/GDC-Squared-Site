@@ -1,5 +1,5 @@
 import './App.css';
-import {Container, Row, Col, Image} from 'react-bootstrap';
+import {Container, Row, Col, Image, Navbar} from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { browserHistory } from 'react-router';
 import React from 'react';
@@ -8,8 +8,9 @@ import Schedule from './subpages/Schedule'
 import SignUp from './subpages/SignUp'
 import Sponsors from './subpages/Sponsors' 
 import Navigation from './subpages/Navigation'
-import Text from './components/Text';
-import Header from './components/Header';
+import BottomNavigation from './subpages/BottomNavigation'
+import Pictures from './subpages/Pictures'
+
 
 function ScrollToTop() {
   window.scrollTo({top: 0, behavior:'smooth'});
@@ -17,20 +18,14 @@ function ScrollToTop() {
 
 function App() {
   return (
-    
       <Container bsPrefix="app-container">
         <Row>
           <Col>
               <Navigation/>
           </Col>
         </Row>
-        <Row>
-          {/*insert image w/ GDC^2*/}
-          <Container>
-            <Image src = "holder.js/100px250" fluid/>
-            <Header>GDC<sup>2</sup></Header>
-            <Text>February XXth - XXth 2020</Text>
-          </Container>
+        <Row bsPrefix="subpage2-row subpage">
+          <Pictures />
         </Row>
         <Row bsPrefix="subpage1-row subpage">
           <About    />
@@ -41,6 +36,7 @@ function App() {
         </Row>
         <Row bsPrefix="subpage3-row subpage">
           <Sponsors />
+          <BottomNavigation />
         </Row>
       </Container>
     

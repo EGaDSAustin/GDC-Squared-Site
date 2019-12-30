@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-function Navigation() {
+const Navigation = (props) => {
     return (
         <Navbar expand="lg" bg="dark" variant="dark" sticky="top"> 
             {/* https://react-bootstrap.github.io/components/navbar/ */}

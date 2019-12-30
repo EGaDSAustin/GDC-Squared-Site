@@ -13,7 +13,7 @@ const Schedule = (props) => {
                        ['3:30-4:20PM'  ,'','','','','Event'],
                        ['3:30-4:20PM'  ,'Event','','Event','',''],
                     ];
-    var i = 0;
+    var i = 0; //what is this used for?
     var schedule_table = <table class="schedule">{
             schedule.map((row)=>
                 <tr>{

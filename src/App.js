@@ -10,6 +10,17 @@ import Sponsors from './subpages/Sponsors'
 import Navigation from './subpages/Navigation'
 import BottomNavigation from './subpages/BottomNavigation'
 import Pictures from './subpages/Pictures'
+import HashLinkObserver from 'react-hash-link'
+
+/**
+ * TODO: today:
+ *  Hash links: https://www.npmjs.com/package/react-hash-link 
+ *    npm install --save react-hash-link
+ *      -- redirection on same page
+ *  fix tab styling
+ *  form creation?
+ * 
+ */
 
 
 function ScrollToTop() {
@@ -19,6 +30,7 @@ function ScrollToTop() {
 function App() {
   return (
       <Container bsPrefix="app-container">
+        <HashLinkObserver />
         <Row>
           <Col>
               <Navigation/>

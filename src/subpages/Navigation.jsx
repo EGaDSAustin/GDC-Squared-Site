@@ -18,7 +18,7 @@ const Navigation = (props) => {
                 <Nav.Link href="#about">ABOUT</Nav.Link>
                 <Nav.Link href="#schedule">SCHEDULE</Nav.Link>
                 <Nav.Link href="#sign-up">SIGN UP</Nav.Link>
-                <Nav.Link href="#join">JOIN</Nav.Link>
+                <Nav.Link href="#sponsors">SPONSORS</Nav.Link>
             </Nav>
         </Navbar>
     );

@@ -11,7 +11,7 @@ const SignUp = (props) => {
 
     return (
         <div>
-            <Container bsPrefix="signUpButton-container">
+            <Container bsPrefix="signUpButton-container" id='sign-up'>
                 <Row>
                     <Col>
                         <ButtonToolbar bsPrefix="signUp-btn-group">

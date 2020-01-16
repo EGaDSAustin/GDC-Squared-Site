@@ -27,7 +27,7 @@ const Schedule = (props) => {
     
 
     return (
-        <div>
+        <div id='schedule'>
             <Header primary>Schedule</Header>
             {schedule_table}
         </div>

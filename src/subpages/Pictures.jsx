@@ -35,7 +35,7 @@ const Pictures = (props) => {
   return (
     <div>
       <Header>GDC<sup>2</sup></Header>
-      <Text primary center>February XXth - XXth 2020</Text>
+      <Text primary center>February 22, 2020</Text>
       <Carousel>
         {pictureList.map((p,idx) => <PictureSlide picture={p} key={idx}/>)}
       </Carousel>

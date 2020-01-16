@@ -49,7 +49,7 @@ const Sponsor = ({sponsor}) => {
 
 const Sponsors = (props) => {
     return (
-        <div>
+        <div id='sponsors'>
             <Container>
                 <Row>
                     <h6>OUR SPONSORS</h6>

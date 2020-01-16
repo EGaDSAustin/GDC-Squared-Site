@@ -9,7 +9,7 @@ import Header from '../components/Header';
 const About = (props) => {
     
     return (
-        <div>
+        <div id='about'>
             <Header primary>What is GDC<sup>2</sup>?</Header>
             <Container fluid='true'>
                 <Row>

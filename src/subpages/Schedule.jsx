@@ -13,17 +13,17 @@ const Schedule = (props) => {
                        ['3:30-4:20PM'  ,'','','','','Event'],
                        ['3:30-4:20PM'  ,'Event','','Event','',''],
                     ];
-    var i = 0; //what is this used for?
-    var schedule_table = <table class="schedule">{
-            schedule.map((row)=>
-                <tr>{
-                        row.map((item) =>
-                            <td>{item}</td>
+    
+    const schedule_table = <table className="schedule"><tbody>{
+            schedule.map((row, idx)=>
+                <tr key={idx}>{
+                        row.map((item, idx2) =>
+                            <td key={`${idx} ${idx2}`}>{item}</td>
                         )
                     }
                 </tr>
             )
-        }</table>
+        }</tbody></table>
     
 
     return (

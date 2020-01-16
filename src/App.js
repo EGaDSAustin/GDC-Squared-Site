@@ -1,7 +1,5 @@
 import './App.css';
-import {Container, Row, Col, Image, Navbar} from 'react-bootstrap';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import { browserHistory } from 'react-router';
+import {Container, Row, Col, } from 'react-bootstrap';
 import React from 'react';
 import About from './subpages/About'
 import Schedule from './subpages/Schedule'
@@ -14,12 +12,8 @@ import HashLinkObserver from 'react-hash-link'
 
 /**
  * TODO: today:
- *  Hash links: https://www.npmjs.com/package/react-hash-link 
- *    npm install --save react-hash-link
- *      -- redirection on same page
- *  fix tab styling
  *  form creation?
- * 
+ *  
  */
 
 
@@ -31,10 +25,8 @@ function App() {
   return (
       <Container bsPrefix="app-container">
         <HashLinkObserver />
-        <Row>
-          <Col>
-              <Navigation/>
-          </Col>
+        <Row bsPrefix='top-row'>
+          <Navigation/>
         </Row>
         <Row bsPrefix="subpage2-row subpage">
           <Pictures />

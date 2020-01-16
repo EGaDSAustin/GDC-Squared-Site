@@ -9,7 +9,7 @@ const Navigation = (props) => {
             <Navbar.Brand href="#home">
                 <img
                     src="/logo.svg" 
-                    width="390" //will put text in middle; dunno if this will image later image
+                    width="465" //will put text in middle; dunno if this will image later image
                     className="d-inline-block align-top"
                     alt="GDC^2 logo"
                 /> 

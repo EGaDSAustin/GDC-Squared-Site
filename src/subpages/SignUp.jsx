@@ -15,16 +15,14 @@ const SignUp = (props) => {
                 <Row>
                     <Col>
                         <ButtonToolbar bsPrefix="signUp-btn-group">
-                            <Button variant = "primary" bsPrefix="signUp-btn"> Click Here To Register</Button>
-                            {/*we can link the application here */}
+                            <Button variant = "primary" bsPrefix="signUp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSduM6WAULZhnz3UkKW0Is_bRiAVzj5n6U6NdVUe_6a1Er1YoQ/viewform">Click here to be a speaker!</Button>
                         </ButtonToolbar>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <ButtonToolbar bsPrefix="signUp-btn-group">
-                            <Button variant = "primary" bsPrefix="signUp-btn"> Click Here To Sponsor This Event</Button>
-                            {/*we can put the link for sponsors here */}
+                            <Button variant = "primary" bsPrefix="signUp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfWSydDpop9RNqXLn38t4BzoH5MNUeVd5GKsvzS2wMFGimFMg/viewform"> Click here to showcase your work!</Button>
                         </ButtonToolbar>
                     </Col>
                 </Row>

@@ -3,7 +3,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import Header from '../components/Header';
 import Text from '../components/Text';
-import Container from 'react-bootstrap/Container';
 
 const pictureList = [
   {

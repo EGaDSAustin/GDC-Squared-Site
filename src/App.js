@@ -13,7 +13,9 @@ import HashLinkObserver from 'react-hash-link'
 /**
  * TODO: today:
  *  form creation?
- *  
+ *  import images into carisol with text?
+ *  dynamically load images? https://stackoverflow.com/questions/42118296/dynamically-import-images-from-a-directory-using-webpack
+ * 
  */
 
 

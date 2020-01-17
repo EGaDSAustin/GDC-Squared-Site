@@ -48,7 +48,7 @@ const SocialMedias = (props) => {
     return (
         <Row>
             <Col>
-                <Text center>Join EGaDS!</Text>
+                <Text center verticalPadding>Join EGaDS!</Text>
             </Col>
             {mediaList.map((m, idx) => <SocialMedia media={m} key={idx}/>)}
         </Row>

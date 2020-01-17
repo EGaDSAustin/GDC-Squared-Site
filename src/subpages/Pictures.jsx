@@ -43,15 +43,27 @@ const Pictures = (props) => {
   return (
     <div>
       <Header>GDC<sup>2</sup></Header>
-      <Text primary center>February 22, 2020</Text>
-      <Carousel>
+      <div style={{
+        backgroundColor: 'white',
+      }}>
+        <Text primary center style={{color:"black"}}>February 22, 2020</Text>
+        <Text primary center style={{color:"black"}}>Be there or be SQUARED (he he get it)</Text>
+      </div>
+      
+      <Carousel
+      style={{
+        marginTop: '2%',
+      }}>
         {images.map((p,idx) => 
         <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={p.img}
-          alt={p.altText}
-        />
+        <div style={{height:'72vh', overflow: 'hidden', alignContent: 'center'}}>
+          <img
+            style={{marginTop: '-20%'}}
+            className="d-block w-100"
+            src={p.img}
+            alt={p.altText}
+          />
+        </div>
         <Carousel.Caption>
           <h3>{p.name}</h3>
           <p>{p.altText}</p>

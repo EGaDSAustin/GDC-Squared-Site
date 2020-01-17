@@ -5,9 +5,6 @@ import Header from '../components/Header';
 import Text from '../components/Text';
 
 function importAll(r){
-  // let images = {};
-  // console.log(r.keys());
-  // r.keys().map((item, index) => { images[item.replace('./', '')] = r(item);});
   return r.keys().map((item, idx) => {
     return {
       name: `Picture ${idx}`,
@@ -45,18 +42,19 @@ const Pictures = (props) => {
       <Header>GDC<sup>2</sup></Header>
       <div style={{
         backgroundColor: 'white',
+        paddingBottom: '2%'
       }}>
+        <Header primary center>Be there or be SQUARED (he he get it)</Header>
         <Text primary center style={{color:"black"}}>February 22, 2020</Text>
-        <Text primary center style={{color:"black"}}>Be there or be SQUARED (he he get it)</Text>
       </div>
       
       <Carousel
       style={{
-        marginTop: '2%',
+        marginTop: '2%'
       }}>
         {images.map((p,idx) => 
         <Carousel.Item>
-        <div style={{height:'72vh', overflow: 'hidden', alignContent: 'center'}}>
+        <div style={{height:'72vh', maxHeight: '50vw', overflow: 'hidden', alignContent: 'center'}}>
           <img
             style={{marginTop: '-20%'}}
             className="d-block w-100"

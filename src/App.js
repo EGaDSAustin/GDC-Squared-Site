@@ -1,5 +1,5 @@
 import './App.css';
-import {Container, Row, Col, } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import React from 'react';
 import About from './subpages/About'
 import Schedule from './subpages/Schedule'
@@ -11,13 +11,11 @@ import Pictures from './subpages/Pictures'
 import HashLinkObserver from 'react-hash-link'
 
 /**
- * TODO: today:
- *  form creation?
- *  import images into carisol with text?
- *  dynamically load images? https://stackoverflow.com/questions/42118296/dynamically-import-images-from-a-directory-using-webpack
- * 
+ * TODO:
+ *  dumb stylin tings
+ *  asssssets
+ *  carousel captions
  */
-
 
 function ScrollToTop() {
   window.scrollTo({top: 0, behavior:'smooth'});

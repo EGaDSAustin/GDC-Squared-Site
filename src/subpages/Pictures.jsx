@@ -41,7 +41,7 @@ const Pictures = (props) => {
     <div>
       <Header>GDC<sup>2</sup></Header>
       <div style={{
-        backgroundColor: 'white',
+        backgroundColor: ' #bfcd7e',
         paddingBottom: '2%'
       }}>
         <Header primary center>Be there or be SQUARED (he he get it)</Header>

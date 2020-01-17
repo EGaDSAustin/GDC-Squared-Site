@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #3e4144;
+  background-color: #ffffff;
 }
 
 .App-logo {
@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #dddddd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,11 +24,11 @@
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #311054;
 }
 
 .app-container {
-  background-color: #3e4144;
+  background-color: #ffffff;
 }
 
 .subpage {
@@ -37,19 +37,19 @@
 }
 
 .subpage1-row {
-  background-color: #ecf0f1;
+  background-color: #bfcd7e;
 }
 
 .subpage2-row {
-  background-color: #3e4144;
+  background-color: #ee7777;
 }
 
 .subpage3-row {
-  background-color: #ffffff;
+  background-color: #bfcd7e;
 }
 
 .signUpButton-container {
-  background-color: #ffffff;
+  background-color: #bfcd7e;
   padding: 1% 0% 1%;
   margin: 1% 40% 1%;
   border-radius: 3px;
@@ -57,7 +57,7 @@
 }
 
 .signUp-btn {
-  background-color: #09d3ac;
+  background-color: #311054;
   color: #ffffff;
   border-radius: 3px;
   border: 0px;

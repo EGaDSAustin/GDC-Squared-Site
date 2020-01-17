@@ -3,7 +3,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Text from '../components/Text';
-import Media from 'react-bootstrap/Media';            
+import Media from 'react-bootstrap/Media';
+import Logo from '../Logo.png';            
 
 const mediaList = [
     {
@@ -57,21 +58,23 @@ const SocialMedias = (props) => {
 
 const BottomNavigation = (props) => {
     return (
-        <Row>
-            <Col>
+        <Row style={{backgroundColor:'#ecf0f1'}}>
+            <Col sm={4}>
               <Navbar>
                   <Navbar.Brand>
                     <img
-                      src="/logo.svg" 
-                      width="390" //will put text in middle; dunno if this will image later image
+                      src={Logo} 
+                      width="200vh"
                       className="d-inline-block align-top"
                       alt="GDC^2 logo"
                     /> 
                   </Navbar.Brand>
                 </Navbar>
             </Col>
-            <Col>
-                <SocialMedias />
+            <Col sm={8} >
+                <div style={{padding:'8vh'}}>
+                    <SocialMedias />    
+                </div>
             </Col>
         </Row>
     );

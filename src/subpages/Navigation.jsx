@@ -1,15 +1,16 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Logo from '../Logo.png';
 
 const Navigation = (props) => {
     return (
-        <Navbar expand="lg" bg="dark" variant="dark" sticky="top"> 
+        <Navbar expand="lg" bg="light" variant="light" sticky="top"> 
             {/* https://react-bootstrap.github.io/components/navbar/ */}
             <Navbar.Brand href="#home">
                 <img
-                    src="/logo.svg" 
-                    width="465" //will put text in middle; dunno if this will image later image
+                    src={Logo} 
+                    width="80vh" //will put text in middle; dunno if this will image later image
                     className="d-inline-block align-top"
                     alt="GDC^2 logo"
                 /> 

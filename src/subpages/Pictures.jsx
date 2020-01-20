@@ -40,11 +40,8 @@ const Pictures = (props) => {
   return (
     <div>
       <Header>GDC<sup>2</sup></Header>
-      <div style={{
-        backgroundColor: ' #bfcd7e',
-        paddingBottom: '2%'
-      }}>
-        <Header primary center>Be there or be SQUARED (he he get it)</Header>
+      <div bsPrefix="subpage1-row">
+        <Header primary center>Be there or be SQUARED<sup>2</sup> (he he get it)</Header>
         <Text primary center style={{color:"black"}}>February 22, 2020</Text>
       </div>
       
@@ -53,7 +50,7 @@ const Pictures = (props) => {
         marginTop: '2%'
       }}>
         {images.map((p,idx) => 
-        <Carousel.Item>
+        <Carousel.Item key={idx}>
         <div style={{height:'72vh', maxHeight: '50vw', overflow: 'hidden', alignContent: 'center'}}>
           <img
             style={{marginTop: '-20%'}}

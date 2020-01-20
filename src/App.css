@@ -37,19 +37,19 @@
 }
 
 .subpage1-row {
-  background-color: #bfcd7e;
-}
-
-.subpage2-row {
   background-color: #ee7777;
 }
 
+.subpage2-row {
+  background-color: #ffffff;
+}
+
 .subpage3-row {
-  background-color: #bfcd7e;
+  background-color: #ee7777;
 }
 
 .signUpButton-container {
-  background-color: #bfcd7e;
+  background-color: #ee7777;
   padding: 1% 0% 1%;
   margin: 1% 40% 1%;
   border-radius: 3px;
@@ -57,16 +57,17 @@
 }
 
 .signUp-btn {
-  background-color: #311054;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   border-radius: 3px;
+  margin-bottom: 4px;
+  padding: 10% 2% 10%;
   border: 0px;
-  padding: 0.5% 1% 0.5%;
-  margin: 0.25% 1% .25%;
   text-align: center;
 }
 
 .signUp-btn-group {
+  margin: 8% 4% 8%;
   display: flex;
   flex-direction: column;
   align-items: center;

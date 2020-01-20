@@ -58,7 +58,7 @@ const SocialMedias = (props) => {
 
 const BottomNavigation = (props) => {
     return (
-        <Row style={{backgroundColor:'#ecf0f1'}}>
+        <Row style={{backgroundColor:'#ecf0f1', margin: 0}}>
             <Col sm={4}>
               <Navbar>
                   <Navbar.Brand>

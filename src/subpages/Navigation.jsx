@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Logo from '../Logo.png';
+import Logo from '../logo.png';
 
 const Navigation = (props) => {
     return (

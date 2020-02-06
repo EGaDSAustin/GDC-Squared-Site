@@ -3,7 +3,15 @@ import Header from '../components/Header';
 import Text from '../components/Text';
 import Splash from '../splash.png'
 
-
+function importAll(r){
+  return r.keys().map((item, idx) => {
+    return {
+      name: `Picture ${idx}`,
+      img: r(item),
+      altText: `Picture Slide ${idx}`
+    }  
+  });
+}
 const Pictures = (props) => {
   return (
     <div>
@@ -20,7 +28,7 @@ const Pictures = (props) => {
         <Header>GDC<sup>2</sup></Header>
         <Text primary center>February 22, 2020</Text>
       </div>
-      
+     
       
     </div>
     

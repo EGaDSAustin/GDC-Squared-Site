@@ -6,8 +6,8 @@ import Splash from '../splash.png'
 import Carousel from 'react-bootstrap/Carousel';
 
 const caption = [
-  'Learn new Skills', 'Create projects', 'Meet new People', 'Cool Presentations', 'Technology Talks'
-  ,'Information about the industry','Socialize', 'Cool designs', 'Have fun'
+  'Learn New Skills', 'Create Projects', 'Meet New People', 'Cool Presentations', 'Technology Talks'
+  ,'Information About The Industry','Socialize', 'Cool Designs', 'Have Fun'
 ];
 
 function importAll(r){

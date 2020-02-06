@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Text from '../components/Text';
 import Splash from '../splash.png'
-import Logo from '../Logo.png';
+import Logo from '../logo.png';
 import Carousel from 'react-bootstrap/Carousel';
 
 function importAll(r){

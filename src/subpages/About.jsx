@@ -42,26 +42,6 @@ const About = (props) => {
                     </Text>
                     </Col>
                     <Col>
-                    <Carousel
-      style={{
-        marginTop: '2%'
-      }}>
-        {images.map((p,idx) => 
-        <Carousel.Item key={idx}>
-        <div style={{height:'100vh', maxHeight: '25vw', overflow: 'hidden', alignContent: 'center'}}>
-          <img
-            style={{marginTop: '-20%'}}
-            className="d-block w-100"
-            src={p.img}
-            alt={p.altText}
-          />
-        </div>
-        <Carousel.Caption>
-          <h3>{p.name}</h3>
-          <p>{p.altText}</p>
-        </Carousel.Caption>
-      </Carousel.Item>)}
-      </Carousel>
                     </Col>
                 </Row>
             </Container>

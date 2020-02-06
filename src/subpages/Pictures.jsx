@@ -5,6 +5,11 @@ import Splash from '../splash.png'
 import Logo from '../logo.png';
 import Carousel from 'react-bootstrap/Carousel';
 
+const caption = [
+  'Learn new Skills', 'Create projects', 'Meet new People', 'Cool Presentations', 'Technology Talks'
+  ,'Information about the industry','Socialize', 'Cool designs', 'Have fun'
+];
+
 function importAll(r){
   return r.keys().map((item, idx) => {
     return {
@@ -48,8 +53,7 @@ const Pictures = (props) => {
           />
         </div>
         <Carousel.Caption>
-          <h3>{p.name}</h3>
-          <p>{p.altText}</p>
+          <h3>{caption[idx]}</h3>
         </Carousel.Caption>
       </Carousel.Item>)}
       </Carousel>

@@ -8,7 +8,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Text from '../components/Text';
 import Header from '../components/Header';
 
-
+import lol from '../lol.png'
   
 
 
@@ -27,7 +27,7 @@ const About = (props) => {
                       padding: '2vw',
                       fontStretch: 'ultra-expanded',
                       textAlign: 'justify',
-                      color: 'white',
+                      color: 'black',
                       fontFamily: 'Tahoma, Geneva, sans-serif'
                     }}>
                         GDC<sup>2</sup> is an EGaDS! hosted event focused on the
@@ -42,6 +42,7 @@ const About = (props) => {
                     </Text>
                     </Col>
                     <Col>
+                        <img src={lol} width='100%'/>
                     </Col>
                 </Row>
             </Container>

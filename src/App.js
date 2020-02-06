@@ -10,8 +10,7 @@ import BottomNavigation from './subpages/BottomNavigation'
 import Pictures from './subpages/Pictures'
 import HashLinkObserver from 'react-hash-link'
 import TempSchedule from './subpages/TempSchedule';
-import Text from './components/Text';
-import Header from './components/Header';
+import Splash from './subpages/Splash'
 
 /**
  * TODO:
@@ -33,11 +32,14 @@ function App() {
         <Row bsPrefix='top-row'>
           <Navigation/>
         </Row>
-        <Row bsPrefix="subpage2-row subpage">
-          <Pictures />
+        <Row>
+          <Splash   />
         </Row>
         <Row bsPrefix="subpage1-row subpage">
           <About    />
+        </Row>
+        <Row bsPrefix="subpage2-row subpage">
+          <Pictures />
         </Row>
         <Row bsPrefix="subpage2-row subpage">
           {/* <Schedule /> */}

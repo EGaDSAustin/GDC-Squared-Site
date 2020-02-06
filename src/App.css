@@ -37,19 +37,19 @@
 }
 
 .subpage1-row {
-  background-color: #ee7777;
-}
-
-.subpage2-row {
   background-color: #ffffff;
 }
 
-.subpage3-row {
+.subpage2-row {
   background-color: #ee7777;
 }
 
+.subpage3-row {
+  background-color: #ffffff;
+}
+
 .signUpButton-container {
-  background-color: #ee7777;
+  background-color: #ffffff;
   padding: 1% 0% 1%;
   margin: 1% 40% 1%;
   border-radius: 3px;

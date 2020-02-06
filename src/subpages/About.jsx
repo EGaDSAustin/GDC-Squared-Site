@@ -8,18 +8,10 @@ import Carousel from 'react-bootstrap/Carousel';
 import Text from '../components/Text';
 import Header from '../components/Header';
 
-function importAll(r){
-    return r.keys().map((item, idx) => {
-      return {
-        name: `Picture ${idx}`,
-        img: r(item),
-        altText: `Picture Slide ${idx}`
-      }  
-    });
-  }
+
   
 
-const images = importAll(require.context('../photos', false, /\.(png|jpe?g|svg)$/));
+
 
 
 const About = (props) => {

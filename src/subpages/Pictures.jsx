@@ -2,7 +2,13 @@ import React from 'react';
 import Header from '../components/Header';
 import Text from '../components/Text';
 import Logo from '../Logo.png';
+import Splash from '../splash.png'
 import Carousel from 'react-bootstrap/Carousel';
+
+const caption = [
+  'Learn new Skills', 'Create projects', 'Meet new People', 'Cool Presentations', 'Technology Talks'
+  ,'Information about the industry','Socialize', 'Cool designs', 'Have fun'
+];
 
 function importAll(r){
   return r.keys().map((item, idx) => {
@@ -33,8 +39,7 @@ const Pictures = (props) => {
           />
         </div>
         <Carousel.Caption>
-          <h3>{p.name}</h3>
-          <p>{p.altText}</p>
+          <h3>{caption[idx]}</h3>
         </Carousel.Caption>
       </Carousel.Item>)}
       </Carousel>

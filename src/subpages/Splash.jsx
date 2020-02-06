@@ -8,8 +8,7 @@ import Col from 'react-bootstrap/Col'
 import SplashArt from '../splash.png'
 
 const Splash = () => {
-    return <div>
-    <div
+    return <div
     style={{
       background: `url(${SplashArt})`,
       backgroundSize: 'cover',
@@ -36,8 +35,8 @@ const Splash = () => {
           </Col>
       </Row>
       </Container>
-    </div>
-  </div>
+    </div>;
+  
 }
 
 export default Splash

@@ -33,7 +33,7 @@
 
 .subpage {
   margin: 0% 0% 0%;
-  padding: 0% 0% 3%;
+  padding: 0% 0% 1%;
 }
 
 .subpage1-row {
@@ -41,7 +41,8 @@
 }
 
 .subpage2-row {
-  background-color: #ee7777;
+  background-color: #ff9999;
+  
 }
 
 .subpage3-row {

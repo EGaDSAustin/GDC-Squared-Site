@@ -18,7 +18,20 @@ const About = (props) => {
     
     return (
         <div id='about'>
-            <Header primary>What is GDC<sup>2</sup>?</Header>
+            <Container fluid='true'>
+                <Row>
+                    <Col>
+                        <Header>
+                            <span style={{
+                                backgroundColor: 'rgba(221,85,85,0.5)',
+                                padding: '10px 400px',
+                            }}>
+                            What Is GDC<sup>2</sup>?
+                            </span>
+                        </Header>
+                    </Col>
+                </Row>
+            </Container>
             <Container fluid='true'>
                 <Row>
                     <Col>
@@ -27,8 +40,10 @@ const About = (props) => {
                       padding: '2vw',
                       fontStretch: 'ultra-expanded',
                       textAlign: 'justify',
-                      color: 'black',
-                      fontFamily: 'Tahoma, Geneva, sans-serif'
+                      color: '#110a0a',
+                      fontFamily: 'Tahoma, Geneva, sans-serif',
+                      backgroundColor: 'rgba(255,238,238,0.5)',
+                      padding: '10px 20px',
                     }}>
                         GDC<sup>2</sup> is an EGaDS! hosted event focused on the
                         practices and technology used in the moder games
@@ -42,7 +57,25 @@ const About = (props) => {
                     </Text>
                     </Col>
                     <Col>
+                        <span style={{
+                            backgroundColor: 'rgba(255,238,238,0.5)',
+                            padding: '100px 0px',
+                        }}>
                         <img src={lol} width='100%'/>
+                        </span>
+                    </Col>
+                </Row>
+            </Container>
+            <Container fluid='true'>
+                <Row>
+                    <Col>
+                        <Header>
+                            <span style={{
+                                backgroundColor: 'rgba(221,85,85,0.5)',
+                                padding: '10px 400px',
+                            }}>
+                            </span>
+                        </Header>
                     </Col>
                 </Row>
             </Container>

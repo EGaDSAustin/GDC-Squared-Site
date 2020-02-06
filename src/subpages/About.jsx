@@ -11,7 +11,7 @@ import Header from '../components/Header';
 
   
 
-const images = importAll(require.context('../photos', false, /\.(png|jpe?g|svg)$/));
+
 
 
 const About = (props) => {

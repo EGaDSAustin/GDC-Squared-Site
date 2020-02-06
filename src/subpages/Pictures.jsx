@@ -12,6 +12,8 @@ function importAll(r){
     }  
   });
 }
+
+const images = importAll(require.context('../photos', false, /\.(png|jpe?g|svg)$/));
 const Pictures = (props) => {
   return (
     <div>

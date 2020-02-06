@@ -2,22 +2,42 @@ import React from 'react'
 import art from '../splash.png'
 import Header from '../components/Header'
 import Text from '../components/Text'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import SplashArt from '../splash.png'
 
 const Splash = () => {
-    return <div
+    return <div>
+    <div
     style={{
-      background: `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) ), url(${art})`,
+      background: `url(${SplashArt})`,
       backgroundSize: 'cover',
-      width : '100vw', 
       height : '98vh',
       color  : 'white',
-      textAlign: 'center',
+      display: 'flex',
+      alignItems: 'center',
+      textShadow: '0px 0px 16px #000000'
     }}
     >
-      <Header primary center style={{color: 'white', paddingBottom:0}}>Be there or be squared</Header>
-      <Header>GDC<sup>2</sup></Header>
-      <Text primary center>February 22, 2020</Text>
+      <Container>
+        <Row>
+          <Col>
+              <Header big>GDC<sup>2</sup></Header>
+              <Header>
+                <span style={{
+                  backgroundColor: 'rgba(0,0,0,0.5)',
+                  padding: '10px 20px'
+                }}>
+                  Be There Or Be Squared
+                </span>
+              </Header>
+              
+          </Col>
+      </Row>
+      </Container>
     </div>
+  </div>
 }
 
 export default Splash

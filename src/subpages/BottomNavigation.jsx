@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Text from '../components/Text';
 import Media from 'react-bootstrap/Media';
-import Logo from '../logo.png';            
+import Logo from '../Logo.png';            
 
 const mediaList = [
     {

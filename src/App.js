@@ -32,13 +32,13 @@ function App() {
         <Row bsPrefix='top-row'>
           <Navigation/>
         </Row>
-        <Row>
+        <Row bsPrefix="subpage1-row subpage">
           <Splash   />
         </Row>
-        <Row bsPrefix="subpage1-row subpage">
+        <Row bsPrefix="subpage2-row subpage">
           <About    />
         </Row>
-        <Row bsPrefix="subpage2-row subpage">
+        <Row bsPrefix="subpage1-row subpage">
           <Pictures />
         </Row>
         <Row bsPrefix="subpage2-row subpage">

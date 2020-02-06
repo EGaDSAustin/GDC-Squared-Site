@@ -44,7 +44,6 @@ function App() {
         <Row bsPrefix="subpage2-row subpage">
           {/* <Schedule /> */}
           <TempSchedule />
-          <SignUp   />
         </Row>
         <Row bsPrefix="subpage3-row subpage">
           <Sponsors />

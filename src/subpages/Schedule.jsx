@@ -1,8 +1,5 @@
 import React from 'react';
 import Header from '../components/Header';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 const Schedule = (props) => {
 
@@ -31,20 +28,7 @@ const Schedule = (props) => {
 
     return (
         <div id='schedule'>
-            <Container fluid='true'>
-                <Row>
-                    <Col>
-                        <Header>
-                            <span style={{
-                                backgroundColor: 'rgba(221,85,85,0.5)',
-                                padding: '10px 400px',
-                            }}>
-                            Schedule
-                            </span>
-                        </Header>
-                    </Col>
-                </Row>
-            </Container>
+            <Header primary>Schedule</Header>
             {schedule_table}
         </div>
     );

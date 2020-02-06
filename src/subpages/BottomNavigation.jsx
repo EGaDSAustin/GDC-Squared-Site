@@ -4,7 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Text from '../components/Text';
 import Media from 'react-bootstrap/Media';
-import Logo from '../Logo.png';            
+import Logo from '../Logo.png';
+import Header from '../components/Header';            
 
 const mediaList = [
     {
@@ -49,7 +50,7 @@ const SocialMedias = (props) => {
     return (
         <Row>
             <Col>
-                <Text center verticalPadding>Join EGaDS!</Text>
+                <Header center>Join EGaDS!</Header>
             </Col>
             {mediaList.map((m, idx) => <SocialMedia media={m} key={idx}/>)}
         </Row>
@@ -58,8 +59,9 @@ const SocialMedias = (props) => {
 
 const BottomNavigation = (props) => {
     return (
-        <Row style={{backgroundColor:'#ecf0f1', margin: 0}}>
-            <Col sm={4}>
+        <div>
+        <Row >
+            <Col sm={4} style={{backgroundColor:'#ecf0f1'}}>
               <Navbar>
                   <Navbar.Brand>
                     <img
@@ -77,6 +79,7 @@ const BottomNavigation = (props) => {
                 </div>
             </Col>
         </Row>
+        </div>
     );
 }
 

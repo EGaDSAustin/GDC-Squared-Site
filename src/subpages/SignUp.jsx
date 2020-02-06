@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Media from 'react-bootstrap/Media';
 
-import Button from 'react-bootstrap/Button';
+import Button from '../components/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 
 const SignUp = (props) => {
@@ -15,8 +15,8 @@ const SignUp = (props) => {
                 <Row>
                     <Col>
                         <ButtonToolbar bsPrefix="signUp-btn-group">
-                            <Button variant = "primary" bsPrefix="signUp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSduM6WAULZhnz3UkKW0Is_bRiAVzj5n6U6NdVUe_6a1Er1YoQ/viewform">Click here to be a speaker!</Button>
-                            <Button variant = "primary" bsPrefix="signUp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfWSydDpop9RNqXLn38t4BzoH5MNUeVd5GKsvzS2wMFGimFMg/viewform"> Click here to showcase your work!</Button>
+                            <Button bsPrefix="signUp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSduM6WAULZhnz3UkKW0Is_bRiAVzj5n6U6NdVUe_6a1Er1YoQ/viewform">Click here to be a speaker!</Button>
+                            <Button bsPrefix="signUp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfWSydDpop9RNqXLn38t4BzoH5MNUeVd5GKsvzS2wMFGimFMg/viewform"> Click here to showcase your work!</Button>
                         </ButtonToolbar>
                     </Col>
                 </Row>

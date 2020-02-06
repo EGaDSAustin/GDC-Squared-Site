@@ -22,7 +22,14 @@ const About = (props) => {
             <Container fluid='true'>
                 <Row>
                     <Col>
-                    <Text>
+                    <Text style = {{
+                      fontSize:28,
+                      padding: '2vw',
+                      fontStretch: 'ultra-expanded',
+                      textAlign: 'justify',
+                      color: 'white',
+                      fontFamily: 'Tahoma, Geneva, sans-serif'
+                    }}>
                         GDC<sup>2</sup> is an EGaDS! hosted event focused on the
                         practices and technology used in the moder games
                         industry, similar to the well known Game Developers
@@ -30,9 +37,8 @@ const About = (props) => {
                         come and give interesting talks on technology and
                         practices in the game industry, as well as an arcade of
                         member projects. Lunch will be provided.
-                    </Text>
-                    <Text>
-                        Hope to see you there!
+                   
+                        <br/><br/>Hope to see you there!
                     </Text>
                     </Col>
                     <Col>
@@ -42,7 +48,7 @@ const About = (props) => {
       }}>
         {images.map((p,idx) => 
         <Carousel.Item key={idx}>
-        <div style={{height:'72vh', maxHeight: '50vw', overflow: 'hidden', alignContent: 'center'}}>
+        <div style={{height:'100vh', maxHeight: '25vw', overflow: 'hidden', alignContent: 'center'}}>
           <img
             style={{marginTop: '-20%'}}
             className="d-block w-100"

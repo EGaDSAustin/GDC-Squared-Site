@@ -9,6 +9,9 @@ import Navigation from './subpages/Navigation'
 import BottomNavigation from './subpages/BottomNavigation'
 import Pictures from './subpages/Pictures'
 import HashLinkObserver from 'react-hash-link'
+import TempSchedule from './subpages/TempSchedule';
+import Text from './components/Text';
+import Header from './components/Header';
 
 /**
  * TODO:
@@ -17,6 +20,8 @@ import HashLinkObserver from 'react-hash-link'
  *  carousel captions
  */
 
+
+  
 function ScrollToTop() {
   window.scrollTo({top: 0, behavior:'smooth'});
 }
@@ -35,7 +40,8 @@ function App() {
           <About    />
         </Row>
         <Row bsPrefix="subpage2-row subpage">
-          <Schedule />
+          {/* <Schedule /> */}
+          <TempSchedule />
           <SignUp   />
         </Row>
         <Row bsPrefix="subpage3-row subpage">

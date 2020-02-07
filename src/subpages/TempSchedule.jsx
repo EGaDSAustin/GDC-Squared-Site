@@ -9,32 +9,34 @@ import SignUp from './SignUp';
 
 function TempSchedule (props) {
     return <div id='schedule'>
-            <Container fluid='true'>
+            <Container style={{padding: '4vw', backgroundColor:'#4e5358'}}>
                 <Row>
                     <Col>
                         <Header>
                             <span style={{
-                                backgroundColor: 'rgba(221,85,85,0.5)',
-                                padding: '10px 400px',
+                                backgroundColor: '#60666C',
+                                padding: '1vw 12vw',
+                                borderRadius: '8px'
                             }}>
                             Schedule
                             </span>
                         </Header>
                     </Col>
                 </Row>
-                <Row>
+                <Row style={{padding: '1vw'}}>
                     <Col>
-                    <Text center>
+                    <Text center primary>
                     <span style={{
-                                backgroundColor: 'rgba(255,238,238,0.5)',
-                                padding: '10px 20px',
+                                backgroundColor: '#60666C',
+                                padding: '1vw 6vw',
+                                borderRadius: '32px'
                             }}>
                             Coming Soon! Join the <a href={'https://discord.gg/4ShtMPx'}>Discord</a> for Anouncements!
                             </span> 
                         </Text>
                     </Col>
                 </Row>
-                <Row>
+                <Row style={{padding: '2vw'}}>
                     <Col>
                         <SignUp   />
                     </Col>
@@ -43,8 +45,9 @@ function TempSchedule (props) {
                     <Col>
                         <Header>
                             <span style={{
-                                backgroundColor: 'rgba(221,85,85,0.5)',
-                                padding: '10px 400px',
+                                backgroundColor: '#60666C',
+                                padding: '1vw 20vw',
+                                borderRadius: '8px'
                             }}>
                             </span>
                         </Header>

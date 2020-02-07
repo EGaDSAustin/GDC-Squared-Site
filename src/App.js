@@ -32,20 +32,20 @@ function App() {
         <Row bsPrefix='top-row'>
           <Navigation/>
         </Row>
-        <Row bsPrefix="subpage1-row subpage">
+        <Row bsPrefix="subpage">
           <Splash   />
         </Row>
-        <Row bsPrefix="subpage2-row subpage">
+        <Row bsPrefix="subpage">
           <About    />
         </Row>
-        <Row bsPrefix="subpage1-row subpage">
+        <Row bsPrefix="subpage">
           <Pictures />
         </Row>
-        <Row bsPrefix="subpage2-row subpage">
+        <Row bsPrefix="subpage">
           {/* <Schedule /> */}
           <TempSchedule />
         </Row>
-        <Row bsPrefix="subpage3-row subpage">
+        <Row bsPrefix="subpage">
           <Sponsors />
           <BottomNavigation />
         </Row>

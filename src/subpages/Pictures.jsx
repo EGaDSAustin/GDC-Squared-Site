@@ -26,11 +26,11 @@ const Pictures = (props) => {
     <div>
       <Carousel
       style={{
-        marginTop: '2%'
+        padding: '1vw 0vw'
       }}>
         {images.map((p,idx) => 
         <Carousel.Item key={idx}>
-        <div style={{height:'100vh', maxHeight: '25vw', overflow: 'hidden', alignContent: 'center'}}>
+        <div style={{height:'100vh', maxHeight: '27vw', overflow: 'hidden', alignContent: 'center'}}>
           <img
             style={{marginTop: '-20%'}}
             className="d-block w-100"

@@ -49,9 +49,6 @@ const SocialMedia = ({media}) => {
 const SocialMedias = (props) => {
     return (
         <Row>
-            <Col>
-                <Header center>Join EGaDS!</Header>
-            </Col>
             {mediaList.map((m, idx) => <SocialMedia media={m} key={idx}/>)}
         </Row>
     );
@@ -59,9 +56,9 @@ const SocialMedias = (props) => {
 
 const BottomNavigation = (props) => {
     return (
-        <div>
-        <Row >
-            <Col sm={4} style={{backgroundColor:'#ecf0f1'}}>
+        <div style={{padding:'2vw'}}>
+        <Row style={{backgroundColor:'#60666C', borderRadius: '4px'}}>
+            <Col sm={4}>
               <Navbar>
                   <Navbar.Brand>
                     <img
@@ -74,7 +71,7 @@ const BottomNavigation = (props) => {
                 </Navbar>
             </Col>
             <Col sm={8} >
-                <div style={{padding:'8vh'}}>
+                <div style={{padding:'5.2vh'}}>
                     <SocialMedias />    
                 </div>
             </Col>

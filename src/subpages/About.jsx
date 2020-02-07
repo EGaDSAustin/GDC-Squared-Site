@@ -19,12 +19,13 @@ const About = (props) => {
     return (
         <div id='about'>
             <Container fluid='true'>
-                <Row>
+                <Row style={{padding:'2vw'}}>
                     <Col>
                         <Header>
                             <span style={{
-                                backgroundColor: 'rgba(221,85,85,0.5)',
-                                padding: '10px 400px',
+                                backgroundColor: '#60666C',
+                                padding: '1vw 12vw',
+                                borderRadius: '8px'
                             }}>
                             What Is GDC<sup>2</sup>?
                             </span>
@@ -36,14 +37,15 @@ const About = (props) => {
                 <Row>
                     <Col>
                     <Text style = {{
-                      fontSize:28,
+                      fontSize:'1.5vw',
                       padding: '2vw',
                       fontStretch: 'ultra-expanded',
                       textAlign: 'justify',
-                      color: '#110a0a',
-                      fontFamily: 'Tahoma, Geneva, sans-serif',
-                      backgroundColor: 'rgba(255,238,238,0.5)',
-                      padding: '10px 20px',
+                      color: '#ffffff',
+                      fontFamily: 'Montserrat, sans-serif',
+                      backgroundColor: '#60666C',
+                      padding: '2vw 2vw',
+                      borderRadius: '16px'
                     }}>
                         GDC<sup>2</sup> is an EGaDS! hosted event focused on the
                         practices and technology used in the moder games
@@ -58,8 +60,9 @@ const About = (props) => {
                     </Col>
                     <Col>
                         <span style={{
-                            backgroundColor: 'rgba(255,238,238,0.5)',
-                            padding: '100px 0px',
+                            backgroundColor: '#60666C',
+                            padding: '6vw 0vw',
+                            borderRadius: '8px'
                         }}>
                         <img src={lol} width='100%'/>
                         </span>
@@ -71,8 +74,9 @@ const About = (props) => {
                     <Col>
                         <Header>
                             <span style={{
-                                backgroundColor: 'rgba(221,85,85,0.5)',
-                                padding: '10px 400px',
+                                backgroundColor: '#60666C',
+                                padding: '1vw 20vw',
+                                borderRadius: '8px'
                             }}>
                             </span>
                         </Header>

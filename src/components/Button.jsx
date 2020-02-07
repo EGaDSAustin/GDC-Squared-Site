@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 import React from 'react';
-import {Button as BootstrapButton} from 'react-bootstrap';
 
+const sButton = styled.button`
+    background-color: #60666C;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    padding: 10% 2% 10%;
+    border: 0px;
+    text-align: center;
+`;
 
-const Button = (props) => {
-    return <BootstrapButton variant={'outline-primary'} />
-}
-
-export default Button;
+export default sButton;

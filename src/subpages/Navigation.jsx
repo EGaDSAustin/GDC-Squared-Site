@@ -5,7 +5,7 @@ import Logo from '../Logo.png';
 
 const Navigation = (props) => {
     return (
-        <Navbar expand="lg" bg="light" variant="light" sticky="top"> 
+        <Navbar expand="lg" bg="dark" variant="dark" sticky="top"> 
             {/* https://react-bootstrap.github.io/components/navbar/ */}
             <Navbar.Brand href="#home">
                 <img

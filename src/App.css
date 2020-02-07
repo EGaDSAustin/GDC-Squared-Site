@@ -33,49 +33,29 @@
 
 .subpage {
   margin: 0% 0% 0%;
-  padding: 0% 0% 1.2%;
+  padding: 0% 0% 0%;
+  background-color: #343a40;
 }
 
-.subpage1-row {
-  background-color: #ffffff;
-}
-
-.subpage2-row {
-  background-color: #ff9999;
-  
-}
-
-.subpage3-row {
-  background-color: #b984a2;
+.subpage-2 {
+  margin: 0% 0% 0%;
+  padding: 0% 0% 0%;
+  background-color: #4e5358;
 }
 
 .signUpButton-container {
-  background-color: #ffffff;
-  padding: 1% 0% 1%;
+  background-color: #343a40;
+  padding: 3.6% 0% 1%;
   margin: 1% 40% 1%;
-  border-radius: 3px;
-
+  border-radius: 8px;
 }
 
-.signUp-btn {
-  background-color: #ffffff;
-  color: #000000;
-  border-radius: 3px;
-  margin-bottom: 4px;
-  padding: 10% 2% 10%;
-  border: 0px;
-  text-align: center;
-}
-
-.signUp-btn-group {
-  margin: 8% 4% 8%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .top-row {
   margin-right: 0px;
   margin-left: 0px;
+}
+
+h1, div {
+  font-family: "Montserrat", serif;
 }

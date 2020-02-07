@@ -9,7 +9,7 @@ import SignUp from './SignUp';
 
 function TempSchedule (props) {
     return <div id='schedule'>
-            <Container style={{padding: '4vw', backgroundColor:'#4e5358'}}>
+            <Container style={{padding: '4vw', backgroundColor:'#4e5358',borderRadius: '16px'}}>
                 <Row>
                     <Col>
                         <Header>

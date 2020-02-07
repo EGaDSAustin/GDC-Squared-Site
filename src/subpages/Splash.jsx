@@ -26,7 +26,8 @@ const Splash = () => {
               <Header>
                 <span style={{
                   backgroundColor: 'rgba(0,0,0,0.5)',
-                  padding: '10px 20px'
+                  padding: '10px 20px',
+                  borderRadius: '8px'
                 }}>
                   Be There Or Be Squared
                 </span>

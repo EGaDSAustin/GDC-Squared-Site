@@ -24,13 +24,25 @@ const images = importAll(require.context('../photos', false, /\.(png|jpe?g|svg)$
 const Pictures = (props) => {
   return (
     <div>
+      <Header>
+        <span style={{
+            backgroundColor: '#60666C',
+            padding: '1vw 12vw',
+            borderRadius: '8px'
+        }}>
+        Pictures
+        </span>
+      </Header>
       <Carousel
       style={{
         padding: '1vw 0vw'
       }}>
         {images.map((p,idx) => 
         <Carousel.Item key={idx}>
-        <div style={{height:'100vh', maxHeight: '27vw', overflow: 'hidden', alignContent: 'center'}}>
+        <div style={{height:'100vh', 
+            maxHeight: '54vw', 
+            overflow: 'hidden', 
+            alignContent: 'center'}}>
           <img
             style={{marginTop: '-20%'}}
             className="d-block w-100"

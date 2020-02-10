@@ -2,9 +2,6 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-import Carousel from 'react-bootstrap/Carousel';
-
 import Text from '../components/Text';
 import Header from '../components/Header';
 
@@ -59,27 +56,7 @@ const About = (props) => {
                     </Text>
                     </Col>
                     <Col>
-                        <span style={{
-                            backgroundColor: '#60666C',
-                            padding: '6vw 0vw',
-                            borderRadius: '8px'
-                        }}>
                         <img src={lol} width='100%'/>
-                        </span>
-                    </Col>
-                </Row>
-            </Container>
-            <Container fluid='true'>
-                <Row>
-                    <Col>
-                        <Header>
-                            <span style={{
-                                backgroundColor: '#60666C',
-                                padding: '1vw 20vw',
-                                borderRadius: '8px'
-                            }}>
-                            </span>
-                        </Header>
                     </Col>
                 </Row>
             </Container>

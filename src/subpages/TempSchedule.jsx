@@ -41,18 +41,6 @@ function TempSchedule (props) {
                         <SignUp   />
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
-                        <Header>
-                            <span style={{
-                                backgroundColor: '#60666C',
-                                padding: '1vw 20vw',
-                                borderRadius: '8px'
-                            }}>
-                            </span>
-                        </Header>
-                    </Col>
-                </Row>
             </Container>
             
             

@@ -33,14 +33,15 @@ const SignUp = (props) => {
                     </Col>
                 </Row>
                
-                <Row style={{display: 'flex',justifyContent: 'center', alignItems: 'center'}}>
-                    <Col style={{padding: '4px'}}>
+                <div style={{display: 'flex',justifyContent: 'center', alignItems: 'center'}}>
+                    <div style={{padding: '4px'}}>
                         <Button bsPrefix="signUp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSduM6WAULZhnz3UkKW0Is_bRiAVzj5n6U6NdVUe_6a1Er1YoQ/viewform">Click here to be a speaker!</Button>
-                    </Col>
-                    <Col style={{padding: '4px'}}>
+                    </div>
+                    <br/>
+                    <div style={{padding: '4px'}}>
                     <Button bsPrefix="signUp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfWSydDpop9RNqXLn38t4BzoH5MNUeVd5GKsvzS2wMFGimFMg/viewform"> Click here to showcase your work!</Button>
-                    </Col>
-                </Row>
+                    </div>
+                </div>
                 
             </Container>
         </div>

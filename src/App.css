@@ -35,9 +35,16 @@
   margin: 0% 0% 0%;
   padding: 0% 0% 0%;
   background-color: #343a40;
+  height: 100vh;
 }
 
 .subpage-2 {
+  margin: 0% 0% 0%;
+  padding: 0% 0% 0%;
+  background-color: #4e5358;
+  height: 100vh;
+}
+.subpage-bottom {
   margin: 0% 0% 0%;
   padding: 0% 0% 0%;
   background-color: #4e5358;
@@ -46,7 +53,6 @@
 .signUpButton-container {
   background-color: #343a40;
   padding: 3.6% 0% 1%;
-  margin: 1% 40% 1%;
   border-radius: 8px;
 }
 

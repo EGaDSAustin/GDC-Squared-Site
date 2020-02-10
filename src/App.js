@@ -35,17 +35,17 @@ function App() {
         <Row bsPrefix="subpage">
           <Splash   />
         </Row>
-        <Row bsPrefix="subpage">
+        <Row bsPrefix="subpage-2">
           <About    />
         </Row>
         <Row bsPrefix="subpage">
           <Pictures />
         </Row>
-        <Row bsPrefix="subpage">
+        <Row bsPrefix="subpage-2">
           {/* <Schedule /> */}
           <TempSchedule />
         </Row>
-        <Row bsPrefix="subpage">
+        <Row bsPrefix="subpage-bottom">
           <Sponsors />
           <BottomNavigation />
         </Row>

@@ -2,10 +2,8 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Text from '../components/Text';
 import Media from 'react-bootstrap/Media';
-import Logo from '../Logo.png';
-import Header from '../components/Header';            
+import Logo from '../logo.png';
 
 const mediaList = [
     {

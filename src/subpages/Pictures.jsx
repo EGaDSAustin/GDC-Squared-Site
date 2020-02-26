@@ -1,8 +1,5 @@
 import React from 'react';
 import Header from '../components/Header';
-import Text from '../components/Text';
-import Logo from '../Logo.png';
-import Splash from '../splash.png'
 import Carousel from 'react-bootstrap/Carousel';
 
 const caption = [
@@ -23,7 +20,8 @@ function importAll(r){
 const images = importAll(require.context('../photos', false, /\.(png|jpe?g|svg)$/));
 const Pictures = (props) => {
   return (
-    <div>
+    <div id='pictures'>
+      <br/>
       <Header>
         <span style={{
             backgroundColor: '#60666C',

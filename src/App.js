@@ -4,7 +4,7 @@ import React from 'react';
 import About from './subpages/About'
 import Schedule from './subpages/Schedule'
 import SignUp from './subpages/SignUp'
-import Sponsors from './subpages/Sponsors' 
+import Sponsors from './subpages/Sponsors'
 import Navigation from './subpages/Navigation'
 import BottomNavigation from './subpages/BottomNavigation'
 import Pictures from './subpages/Pictures'
@@ -14,11 +14,8 @@ import Splash from './subpages/Splash'
 
 /**
  * TODO:
- *  dumb stylin tings
- *  asssssets
- *  carousel captions
+ * Mobile styling
  */
-
 
   
 function ScrollToTop() {
@@ -28,7 +25,7 @@ function ScrollToTop() {
 function App() {
   return (
       <Container bsPrefix="app-container">
-        <HashLinkObserver />
+        <HashLinkObserver smoothScroll/>
         <Row bsPrefix='top-row'>
           <Navigation/>
         </Row>
@@ -46,7 +43,7 @@ function App() {
           <TempSchedule />
         </Row>
         <Row bsPrefix="subpage-bottom">
-          <Sponsors />
+          {/* <Sponsors /> */}
           <BottomNavigation />
         </Row>
       </Container>

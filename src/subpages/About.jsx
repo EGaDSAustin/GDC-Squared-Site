@@ -7,10 +7,6 @@ import Header from '../components/Header';
 
 import lol from '../lol.png'
   
-
-
-
-
 const About = (props) => {
     
     return (
@@ -34,18 +30,17 @@ const About = (props) => {
                 <Row>
                     <Col>
                     <Text style = {{
-                      fontSize:'1.5vw',
-                      padding: '2vw',
+                      fontSize:'26px',
+                      padding: '2vw 2vw',
                       fontStretch: 'ultra-expanded',
                       textAlign: 'justify',
                       color: '#ffffff',
                       fontFamily: 'Montserrat, sans-serif',
                       backgroundColor: '#60666C',
-                      padding: '2vw 2vw',
                       borderRadius: '16px'
                     }}>
                         GDC<sup>2</sup> is an EGaDS! hosted event focused on the
-                        practices and technology used in the moder games
+                        practices and technology used in the modern games
                         industry, similar to the well known Game Developers
                         Conference. We'll have a number of industry speakers
                         come and give interesting talks on technology and
@@ -56,7 +51,7 @@ const About = (props) => {
                     </Text>
                     </Col>
                     <Col>
-                        <img src={lol} width='100%'/>
+                        <img src={lol} alt="" width='100%'/>
                     </Col>
                 </Row>
             </Container>

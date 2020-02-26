@@ -5,13 +5,14 @@ import Col from 'react-bootstrap/Col';
 import Media from 'react-bootstrap/Media';
 import Header from '../components/Header';
 import Button from '../components/Button';
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
+import Arrow1 from '../arrow2.png';
+import Arrow2 from '../arrow2flipped.png';
 
 const SignUp = (props) => {
 
     return (
-        <div>
-            <Container bsPrefix="signUpButton-container" id='sign-up'>
+        <div id='sign-up'>
+            <Container bsPrefix="signUpButton-container" >
                 <Row>
                     <Col style={{padding: '1px'}}>
                         <Header>
@@ -28,18 +29,34 @@ const SignUp = (props) => {
                 <Row>
                     <Col style={{display: 'flex',justifyContent: 'center', alignItems: 'center', padding: '8px'}}>
                         <Media>
-                        <img src='http://utgamejam.com/raccoon.6c57d67e.png'/>
+                        <img src='http://utgamejam.com/raccoon.6c57d67e.png' alt="Render the Raccoon!"/>
                         </Media>
                     </Col>
                 </Row>
                
                 <div style={{display: 'flex',justifyContent: 'center', alignItems: 'center'}}>
                     <div style={{padding: '4px'}}>
-                        <Button bsPrefix="signUp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSduM6WAULZhnz3UkKW0Is_bRiAVzj5n6U6NdVUe_6a1Er1YoQ/viewform">Click here to be a speaker!</Button>
+                        <Media>
+                            <img src={Arrow1} alt="" width="90%"/>
+                        </Media>
+                    </div>
+                    <div style={{padding: '4px'}}>
+                        <Button 
+                        onClick={() => {window.location.href="https://www.eventbrite.com/e/gdc2-tickets-93865459115"}}>
+                            Click here to attend!
+                        </Button>
                     </div>
                     <br/>
                     <div style={{padding: '4px'}}>
-                    <Button bsPrefix="signUp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfWSydDpop9RNqXLn38t4BzoH5MNUeVd5GKsvzS2wMFGimFMg/viewform"> Click here to showcase your work!</Button>
+                        <Button
+                        onClick={() => {window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSfWSydDpop9RNqXLn38t4BzoH5MNUeVd5GKsvzS2wMFGimFMg/viewform"}}>
+                            Click here to showcase your work!
+                        </Button>
+                    </div>
+                    <div style={{padding: '4px'}}>
+                        <Media>
+                            <img src={Arrow2} alt="" width="90%"/>
+                        </Media>
                     </div>
                 </div>
                 

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #343a40;
 }
 
 .App-logo {
@@ -35,19 +35,19 @@
   margin: 0% 0% 0%;
   padding: 0% 0% 0%;
   background-color: #343a40;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .subpage-2 {
   margin: 0% 0% 0%;
   padding: 0% 0% 0%;
   background-color: #4e5358;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .subpage-bottom {
   margin: 0% 0% 0%;
   padding: 0% 0% 0%;
-  background-color: #4e5358;
+  background-color: #343a40;
 }
 
 .signUpButton-container {

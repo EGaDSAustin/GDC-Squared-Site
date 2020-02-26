@@ -3,23 +3,23 @@ import Header from '../components/Header';
 
 const Schedule = (props) => {
 
-    const schedule = [ ['Time'         ,'2.216','4.302','5.302','6.302','5.304'],
-                       ['11:00-11:30AM','Kickoff','','','',''],
-                       ['11:30-12:30PM','','Eduardo Ortiz, Kat Wenske, & Daniel Rosenfeld Mod. Tyler Coleman: Game Audio Panel','','Phillip Johnson, Cricket Carlson, Chip Thurston & Elisa Reyna: Game Marketing Panel',''],
-                       ['12:30-1:30PM' ,'','','Alex Keller: Sound Design Workshop','','Ava Pek: Narrative Scripting Languages'],
-                       ['1:30-2:30PM'  ,'Lunch/Showcase (Atrium)','','','',''],
-                       ['2:30-3:30PM'  ,'Game Pitch Competition','Daniel Reese & Fox Buchele: Blender Workshop','','Bread & Butter Game Co.: "Shipping a Company" Panel',''],
-                       ['3:30-4:30PM'  ,'Game Pitch Competition','','Michael Baker: Crafting Game Feel Workshop','','Richard Terrell: Level Design in Mario Maker 2'],
-                       ['4:30-5:30PM'  ,'Game Pitch Competition','Nabi Barak: Qualitative Feedback in Gameplay Design','','Etienne Vouga: "Zelda Classic" Gamemaker',''],
-                       ['5:30-6:30PM'  ,'Richard Terrell, Gordon Walton, Susan O\' Connor & Chip Sbrogna: Collaborating Across Disciplines','','','',''],
-                       ['6:30-7:00PM'  ,'Closing Ceremony','','','',''],
+    const schedule = [ [{title:'Time'}         ,'2.216','4.302','5.302','6.302','5.304'],
+                       [{content:'11:00-11:30AM'},{title:'Kickoff'},'','','',''],
+                       [{content:'11:30-12:30PM'},'',{title:'Game Audio Panel', content:'Eduardo Ortiz, Kat Wenske, & Daniel Rosenfeld Mod. Tyler Coleman '},'',{title:'Game Marketing Panel', content:'Phillip Johnson, Cricket Carlson, Chip Thurston & Elisa Reyna'},''],
+                       [{content:'12:30-1:30PM' },'','',{title:'Sound Design Workshop', content:'Alex Keller'},'',{title:'Narrative Scripting Languages',content:'Ava Pek'}],
+                       [{content:'1:30-2:30PM'  },{title:'Lunch/Showcase (Atrium)'},'','','',''],
+                       [{content:'2:30-3:30PM'  },{title:'Game Pitch Competition'},{title:'Blender Workshop',content:' Daniel Reese & Fox Buchele'},'',{title:'"Shipping a Company" Panel',content:' Bread & Butter Game Co.'},''],
+                       [{content:'3:30-4:30PM'  },{title:'Game Pitch Competition'},'',{title:'Crafting Game Feel Workshop',content:'Michael Baker'},'',{title:'Level Design in Mario Maker 2',content:'Richard Terrell'}],
+                       [{content:'4:30-5:30PM'  },{title:'Game Pitch Competition'},{content:'Nabi Barak',title:'Qualitative Feedback in Gameplay Design'},'',{content:'Etienne Vouga',title:'"Zelda Classic" Gamemaker'},''],
+                       [{content:'5:30-6:30PM'  },{title:'Collaborating Across Disciplines Richard Terrell', content:'Gordon Walton, Susan O\' Connor & Chip Sbrogna'},'','','',''],
+                       [{content:'6:30-7:00PM'  },{title:'Closing Ceremony'},'','','',''],
                     ];
     
     const schedule_table = <table className="schedule"><tbody>{
             schedule.map((row, idx)=>
                 <tr key={idx}>{
                         row.map((item, idx2) =>
-                            <td key={`${idx} ${idx2}`}>{item}</td>
+                <td key={`${idx} ${idx2}`}><b>{item.title}</b> <br/>{item.content}</td>
                         )
                     }
                 </tr>

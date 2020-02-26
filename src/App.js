@@ -39,11 +39,15 @@ function App() {
           <Pictures />
         </Row>
         <Row bsPrefix="subpage-2">
-          {/* <Schedule /> */}
-          <TempSchedule />
+          <Schedule />
+        </Row>
+        <Row bsPrefix="subpage">
+          <SignUp/>
+        </Row>
+        <Row bsPrefix="subpage-2">
+          <Sponsors/>
         </Row>
         <Row bsPrefix="subpage-bottom">
-          {/* <Sponsors /> */}
           <BottomNavigation />
         </Row>
       </Container>

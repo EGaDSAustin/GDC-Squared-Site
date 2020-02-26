@@ -12,7 +12,7 @@ const SignUp = (props) => {
 
     return (
         <div id='sign-up'>
-            <Container bsPrefix="signUpButton-container" >
+            <Container bsPrefix="signUpButton-container">
                 <Row>
                     <Col style={{padding: '1px'}}>
                         <Header>
@@ -27,7 +27,7 @@ const SignUp = (props) => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{display: 'flex',justifyContent: 'center', alignItems: 'center', padding: '8px'}}>
+                    <Col style={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '8px'}}>
                         <Media>
                         <img src='http://utgamejam.com/raccoon.6c57d67e.png' alt="Render the Raccoon!"/>
                         </Media>

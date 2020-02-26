@@ -5,35 +5,63 @@ import Col from 'react-bootstrap/Col';
 import Media from 'react-bootstrap/Media';
 import Header from '../components/Header';
 
+import Niantic from '../sponsors/niantic.png'
+import Riot from '../sponsors/riot.png'
+import HOFT from '../sponsors/hoftgamelab.png'
+import Kabam from '../sponsors/kabam.png'
+import EA from '../sponsors/ea.png'
+import Zynga from '../sponsors/zynga.png'
+
 const sponsorList = [
     {
         name: 'Niantic',
-        img: 'http://utgamejam.com/can.fa4a2f1e.png',
-        altText: 'niantic'
+        img: Niantic,
+        altText: 'Niantic',
+        height: '120px',
+        width: '100px'
     },
     {
-        name: 'Niantic',
-        img: 'http://utgamejam.com/phone.0387d672.png',
-        altText: 'niantic'
+        name: 'Riot',
+        img: Riot,
+        altText: 'Riot',
+        height: '80px',
+        width: '120px'
     },
     {
-        name: 'Niantic',
-        img: 'http://utgamejam.com/pen.8c1d39a4.png',
-        altText: 'niantic'
+        name: 'EA',
+        img: EA,
+        altText: 'EA',
+        height: '80px',
+        width: '80px'
     },
     {
-        name: 'Niantic',
-        img: 'http://utgamejam.com/keyboard.644f631e.png',
-        altText: 'niantic'
+        name: 'HOFT Game Lab',
+        img: HOFT,
+        altText: 'HOFT',
+        height: '80px',
+        width: '200px'
     },
-    
+    {
+        name: 'Zynga',
+        img: Zynga,
+        altText: 'Zynga',
+        height: '80px',
+        width: '200px'
+    },
+    {
+        name: 'Kabam',
+        img: Kabam,
+        altText: 'Kabam',
+        height: '100px',
+        width: '80px'
+    },
 ]
 
 const Sponsor = ({sponsor}) => {
     return (
         <Col style={{display:'flex', justifyContent:"center"}}>
             <Media>
-                <img src={sponsor.img} alt={sponsor.altText} height='80px' width='80px'/>
+                <img src={sponsor.img} alt={sponsor.altText} height={sponsor.height} width={sponsor.width}/>
             </Media>
         </Col>
     );

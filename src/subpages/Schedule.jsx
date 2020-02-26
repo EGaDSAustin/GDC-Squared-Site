@@ -3,15 +3,16 @@ import Header from '../components/Header';
 
 const Schedule = (props) => {
 
-    const schedule = [ ['','Atrium'  ,'2.216','4.302','5.302','6.302'],
-                       ['9:30-10:30AM' ,'','Event','Event','','Event'],
-                       ['10:00-10:50AM','Event','','Event','','Event'],
-                       ['11:00-11:50AM','','','Event','','Event'],
-                       ['12:00-1:30PM' ,'','','','Event',''],
-                       ['1:30-2:20PM'  ,'Event','','Event','',''],
-                       ['2:30-3:20PM'  ,'','','','','Event'],
-                       ['3:30-4:20PM'  ,'','','','','Event'],
-                       ['3:30-4:20PM'  ,'Event','','Event','',''],
+    const schedule = [ ['Time'         ,'2.216','4.302','5.302','6.302','5.304'],
+                       ['11:00-11:30AM','Kickoff','','','',''],
+                       ['11:30-12:30PM','','Eduardo Ortiz, Kat Wenske, & Daniel Rosenfeld Mod. Tyler Coleman: Game Audio Panel','','Phillip Johnson & Gordon Walton: Game Marketing',''],
+                       ['12:30-1:30PM' ,'','','Alex Keller: Sound Design Workshop','','Ava Pek: Narrative Scripting Languages'],
+                       ['1:30-2:30PM'  ,'Lunch/Showcase (Atrium)','','','',''],
+                       ['2:30-3:30PM'  ,'Game Pitch Competition','Daniel Reese & Fox Buchele: Blender Workshop','','Bread & Butter Game Co.: "Shipping a Company" Panel',''],
+                       ['3:30-4:30PM'  ,'Game Pitch Competition','','Michael Baker: Crafting Game Feel Workshop','','Richard Terrell: Level Design in Mario Maker 2'],
+                       ['4:30-5:30PM'  ,'Game Pitch Competition','Nabi Barak: Qualitative Feedback in Gameplay Design','','Etienne Vouga: "Zelda Classic" Gamemaker',''],
+                       ['5:30-6:30PM'  ,'Richard Terrell & Susan O\'Connor: Collaborating Across Disciplines','','','',''],
+                       ['6:30-7:00PM'  ,'Closing Ceremony','','','',''],
                     ];
     
     const schedule_table = <table className="schedule"><tbody>{
@@ -28,7 +29,15 @@ const Schedule = (props) => {
 
     return (
         <div id='schedule'>
-            <Header primary>Schedule</Header>
+            <Header>
+                <span style={{
+                    backgroundColor: '#60666C',
+                    padding: '1vw 12vw',
+                    borderRadius: '8px'
+                }}>
+                    Schedule
+                </span>
+            </Header>
             {schedule_table}
         </div>
     );

@@ -11,7 +11,7 @@ const Schedule = (props) => {
                        [{content:'2:30-3:30PM'  },{title:'Game Pitch Competition'},{title:'Blender Workshop',content:' Daniel Reese & Fox Buchele'},'',{title:'"Shipping a Company" Panel',content:' Bread & Butter Game Co.'},''],
                        [{content:'3:30-4:30PM'  },{title:'Game Pitch Competition'},'',{title:'Crafting Game Feel Workshop',content:'Michael Baker'},'',{title:'Level Design in Mario Maker 2',content:'Richard Terrell'}],
                        [{content:'4:30-5:30PM'  },{title:'Game Pitch Competition'},{content:'Nabi Barak',title:'Qualitative Feedback in Gameplay Design'},'',{content:'Etienne Vouga',title:'"Zelda Classic" Gamemaker'},''],
-                       [{content:'5:30-6:30PM'  },{title:'Collaborating Across Disciplines Richard Terrell', content:'Gordon Walton, Susan O\' Connor & Chip Sbrogna'},'','','',''],
+                       [{content:'5:30-6:30PM'  },{title:'Collaborating Across Disciplines', content:' Richard Terrell, Gordon Walton, Susan O\' Connor & Chip Sbrogna'},'','','',''],
                        [{content:'6:30-7:00PM'  },{title:'Closing Ceremony'},'','','',''],
                     ];
     

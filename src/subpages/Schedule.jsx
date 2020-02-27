@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 const Schedule = (props) => {
 
-    const schedule = [ [{title:'Time'}         ,'2.216','4.302','5.302','6.302','5.304'],
+    const schedule = [ [{content:'Time'}         ,{content:'2.216'},{content:'4.302'},{content:'5.302'},{content:'6.302'},{content:'5.304'}],
                        [{content:'11:00-11:30AM'},{title:'Kickoff'},'','','',''],
                        [{content:'11:30-12:30PM'},'',{title:'Game Audio Panel', content:'Eduardo Ortiz, Kat Wenske, & Daniel Rosenfeld Mod. Tyler Coleman '},'',{title:'Game Marketing Panel', content:'Phillip Johnson, Cricket Carlson, Chip Thurston & Elisa Reyna'},''],
                        [{content:'12:30-1:30PM' },'','',{title:'Sound Design Workshop', content:'Alex Keller'},'',{title:'Narrative Scripting Languages',content:'Ava Pek'}],
@@ -19,7 +19,9 @@ const Schedule = (props) => {
             schedule.map((row, idx)=>
                 <tr key={idx}>{
                         row.map((item, idx2) =>
-                <td key={`${idx} ${idx2}`}><b>{item.title}</b> <br/>{item.content}</td>
+                <td key={`${idx} ${idx2}`}>
+                    
+                    {map_td(item)}</td>
                         )
                     }
                 </tr>
@@ -41,6 +43,21 @@ const Schedule = (props) => {
             {schedule_table}
         </div>
     );
+}
+
+function map_td(item){
+    if(item.hasOwnProperty('title') && item.hasOwnProperty('content')){
+        return(<div><b>{item.title}</b> <br/> {item.content}</div>)
+    }
+    else if(item.hasOwnProperty('title')){
+        return(<div><b>{item.title}</b></div>)
+    }
+    else if(item.hasOwnProperty('content')){
+        return(<div>{item.content}</div>)
+    }
+    else{
+        return(<div>{item}</div>)
+    }
 }
 
 export default Schedule;

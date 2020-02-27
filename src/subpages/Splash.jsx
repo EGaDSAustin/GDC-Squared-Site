@@ -29,10 +29,18 @@ const Splash = () => {
                   padding: '10px 20px',
                   borderRadius: '8px'
                 }}>
+                  February 29, 2020
+                </span>
+              </Header>
+              <Header>
+                <span style={{
+                  backgroundColor: 'rgba(0,0,0,0.5)',
+                  padding: '10px 20px',
+                  borderRadius: '8px'
+                }}>
                   Be There Or Be Squared
                 </span>
               </Header>
-              
           </Col>
       </Row>
       </Container>

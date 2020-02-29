@@ -7,7 +7,7 @@ const Schedule = (props) => {
                        [{content:'11:00-11:30AM'},{title:'Kickoff', content:'EGaDS! and Justen Andrews'},'','','',''],
                        [{content:'11:30-12:30PM'},'',{title:'Game Audio Panel', content:'Eduardo Ortiz, Kat Wenske, & Daniel Rosenfeld Mod. Tyler Coleman'},'',{title:'Game Marketing Panel', content:'Phillip Johnson, Cricket Carlson, Gordon Walton, Chip Thurston, & Elisa Reyna'},''],
                        [{content:'12:30-1:30PM' },'','',{title:'Sound Design Workshop', content:'Alex Keller'},'',{title:'Narrative Scripting Languages',content:'Ava Pek'}],
-                       [{content:'1:30-2:30PM'  },{title:'Lunch/Showcase (Atrium)'},'','','',''],
+                       [{content:'1:30-2:30PM'  },{title:'Lunch/Student Arcade (Atrium)'},'','','',''],
                        [{content:'2:30-3:30PM'  },{title:'Game Pitch Competition', content:'Paul Toprac'},{title:'Blender Workshop',content:' Daniel Reese & Fox Buchele'},'',{title:'"Shipping a Company" Panel',content:' Bread & Butter Game Co.'},''],
                        [{content:'3:30-4:30PM'  },{title:'Game Pitch Competition', content:'Paul Toprac'},'',{title:'Crafting Game Feel Workshop',content:'Michael Baker'},'',{title:'Level Design in Mario Maker 2',content:'Richard Terrell'}],
                        [{content:'4:30-5:30PM'  },{title:'Game Pitch Competition', content:'Paul Toprac'},{content:'Nabi Barak',title:'Qualitative Feedback in Gameplay Design'},'',{content:'Etienne Vouga',title:'"Zelda Classic" Gamemaker'},''],
@@ -15,18 +15,30 @@ const Schedule = (props) => {
                        [{content:'6:30-7:00PM'  },{title:'Closing Ceremony', content:'EGaDS!'},'','','',''],
                     ];
     
-    const schedule_table = <table className="schedule"><tbody>{
-            schedule.map((row, idx)=>
-                <tr key={idx}>{
-                        row.map((item, idx2) =>
-                <td key={`${idx} ${idx2}`}>
-                    
-                    {map_td(item)}</td>
-                        )
-                    }
-                </tr>
-            )
-        }</tbody></table>
+    const schedule_table = 
+    <div>
+        <table className="schedule"><tbody>
+            <tr/>
+            <tr display="block">
+                <td>Student Arcade - Atrium, All Day</td>
+            </tr>
+        </tbody></table>
+        <table className="schedule"><tbody>
+            {
+                schedule.map((row, idx)=>
+                    <tr key={idx}>{
+                            row.map((item, idx2) =>
+                    <td key={`${idx} ${idx2}`}>
+                        
+                        {map_td(item)}</td>
+                            )
+                        }
+                    </tr>
+                )
+            }
+            </tbody>
+        </table>
+    </div>
     
 
     return (

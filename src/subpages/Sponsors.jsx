@@ -84,7 +84,7 @@ const Sponsors = (props) => {
                         </Header>
                     </Col>
                 </Row>
-                <Row>
+                <Row style={{paddingBottom:"10px"}}>
                     {sponsorList.map((s, idx) => <Sponsor sponsor={s} key={idx}/>)}
                 </Row>
             </Container>
